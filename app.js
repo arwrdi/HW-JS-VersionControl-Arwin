@@ -4,10 +4,10 @@ const evenIndex = [];
 
 let sumOdd = 0;
 let sumEven = 0;
-let minOdd = [2], maxOdd = [0];
-let minEven = [2], maxEven = [0];
+let minOdd = 2, maxOdd = 0;
+let minEven = 2, maxEven = 0;
 for(let i = 0; i < 100; i++) {
-    randomNumbers.push(Math.floor(Math.random() * 50))
+    randomNumbers.push(Math.floor(Math.random() * 50)+1)
 }
 
 for (let i=0;i<randomNumbers.length;i++){
@@ -49,12 +49,12 @@ for (let valueEvenIndex of evenIndex) {
 averageOddIndex = sumOdd / oddIndex.length;
 averageEvenIndex = sumEven / evenIndex.length;
 
-// console.log("Ini Random Number",randomNumbers);
-// console.log(oddIndex);
+console.log("Ini Random Number",randomNumbers);
+console.log(oddIndex);
 // console.log(sumOdd)
 // console.log(averageOddIndex)
 
-// console.log("EvenIndex", evenIndex);
+console.log("EvenIndex", evenIndex);
 // console.log(sumOdd)
 // console.log(averageEvenIndex)
 // console.log(maxOdd)
